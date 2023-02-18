@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="salesforce-lightning-design-system.css" />
+
+  </head>
+
+  <body>
+    <article class="slds-card">
+      <div class="slds-card__header slds-grid">
+        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+          <div class="slds-media__body">
+            <h2 class="slds-card__header-title">SFDC Navigation</h2>
+          </div>
+        </header>
+      </div>
+      <div class="slds-card__body slds-card__body_inner">
+        <!-- Copy the current page id-->
+        <div class="">
+          <label class="slds-form-element__label" for="record-id-copy">
+            Copy record id
+          </label>
+          <div class="slds-form-element__control">
+            <button id="record-id-copy" class="slds-button slds-button_neutral slds-button_stretch">
+              Copy
+            </button>
+          </div>
+        </div>
+
+        <!-- Navigation directly to id -->
+        <div class="">
+          <label class="slds-form-element__label" for="record-id-input">
+            Navigate to record</label
+          >
+          <div id="record-id-div" class="slds-form-element slds-grid">
+            <div class="slds-form-element__control slds-col">
+              <input
+                autofocus
+                type="text"
+                id="record-id-input"
+                placeholder="Record Id"
+                required=""
+                class="slds-input"
+              />
+            </div>
+            <div class="slds-col">
+              <button class="slds-button slds-button_brand" id="record-id-button">Go</button>
+            </div>
+          </div>
+        </div>
+        <!-- Open developer console -->
+        <div class="slds-p-top_small">
+            <label class="slds-form-element__label">
+                Developer Console</label
+              >
+            <div class="">
+                <button id="open-dev-button" class="slds-button slds-button_neutral slds-button_stretch">Open</button>
+            </div>
+
+        </div>
+      </div>
+    </article>
+    <script src="sfdc-nav.js"></script>
+  </body>
+</html>
